@@ -4,127 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audio Lessons | Crypto Simplified</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
   <style>
-    .audio-container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .audio-card {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    .lesson-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    .lesson-number {
-      background: #0066cc;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0a0a;
       color: white;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.2rem;
     }
-    .lesson-title {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: #222;
+    
+    .heading-font {
+      font-family: 'Space Grotesk', sans-serif;
     }
+
+    .audio-card {
+      background: #111111;
+      border: 1px solid #222;
+      transition: all 0.3s ease;
+    }
+    
+    .audio-card:hover {
+      border-color: #00f5d4;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 245, 212, 0.1);
+    }
+
+    .lesson-number {
+      background: linear-gradient(135deg, #00f5d4, #10b981);
+      color: black;
+      font-weight: 700;
+    }
+
     audio {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 12px;
+      accent-color: #00f5d4;
     }
+
     .back-link {
-      color: #0066cc;
-      text-decoration: none;
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      display: inline-block;
+      color: #00f5d4;
+      transition: color 0.2s;
+    }
+    
+    .back-link:hover {
+      color: #00e6c8;
     }
   </style>
 </head>
-<body>
+<body class="min-h-screen">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Back Button -->
+    <a href="index.html" class="back-link inline-flex items-center gap-2 text-lg mb-10 hover:underline">
+      ← Back to Home
+    </a>
 
-  <div class="audio-container">
-    <a href="index.html" class="back-link">← Back to Home</a>
-
-    <h1 style="text-align:center; font-size:2.2rem; margin-bottom:10px;">Audio Lessons</h1>
-    <p style="text-align:center; color:#666; margin-bottom:40px;">Listen to the lessons anytime • Pure Education</p>
-
-    <!-- Lesson 1 -->
-    <div class="audio-card">
-      <div class="lesson-header">
-        <div class="lesson-number">1</div>
-        <div class="lesson-title">What Crypto Currency really is? (Beyond The Hype)</div>
-      </div>
-      <audio controls controlsList="nodownload">
-        <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="heading-font text-5xl font-semibold tracking-tighter mb-4">
+        Audio Lessons
+      </h1>
+      <p class="text-xl text-gray-400 max-w-md mx-auto">
+        Listen anytime • Pure Education. No Hype.
+      </p>
+      <div class="w-24 h-1 bg-[#00f5d4] mx-auto mt-6 rounded-full"></div>
     </div>
 
-    <!-- Lesson 2 -->
-    <div class="audio-card">
-      <div class="lesson-header">
-        <div class="lesson-number">2</div>
-        <div class="lesson-title">How Blockchain works?</div>
+    <!-- Lessons -->
+    <div class="space-y-6">
+      
+      <!-- Lesson 1 -->
+      <div class="audio-card rounded-3xl p-8">
+        <div class="flex items-start gap-5">
+          <div class="lesson-number w-14 h-14 flex-shrink-0 rounded-2xl flex items-center justify-center text-2xl">1</div>
+          <div class="flex-1 pt-1">
+            <h3 class="text-2xl font-semibold mb-3">What Crypto Currency really is? (Beyond The Hype)</h3>
+            <audio controls controlsList="nodownload">
+              <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
       </div>
-      <audio controls controlsList="nodownload">
-        <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-2.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+
+      <!-- Lesson 2 -->
+      <div class="audio-card rounded-3xl p-8">
+        <div class="flex items-start gap-5">
+          <div class="lesson-number w-14 h-14 flex-shrink-0 rounded-2xl flex items-center justify-center text-2xl">2</div>
+          <div class="flex-1 pt-1">
+            <h3 class="text-2xl font-semibold mb-3">How Blockchain works?</h3>
+            <audio controls controlsList="nodownload">
+              <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 3 -->
+      <div class="audio-card rounded-3xl p-8">
+        <div class="flex items-start gap-5">
+          <div class="lesson-number w-14 h-14 flex-shrink-0 rounded-2xl flex items-center justify-center text-2xl">3</div>
+          <div class="flex-1 pt-1">
+            <h3 class="text-2xl font-semibold mb-3">Bitcoin - The First Crypto Currency</h3>
+            <audio controls controlsList="nodownload">
+              <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-3.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 4 -->
+      <div class="audio-card rounded-3xl p-8">
+        <div class="flex items-start gap-5">
+          <div class="lesson-number w-14 h-14 flex-shrink-0 rounded-2xl flex items-center justify-center text-2xl">4</div>
+          <div class="flex-1 pt-1">
+            <h3 class="text-2xl font-semibold mb-3">Ethereum (More than Money)</h3>
+            <audio controls controlsList="nodownload">
+              <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-4.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lesson 5 -->
+      <div class="audio-card rounded-3xl p-8">
+        <div class="flex items-start gap-5">
+          <div class="lesson-number w-14 h-14 flex-shrink-0 rounded-2xl flex items-center justify-center text-2xl">5</div>
+          <div class="flex-1 pt-1">
+            <h3 class="text-2xl font-semibold mb-3">How Crypto transactions work?</h3>
+            <audio controls controlsList="nodownload">
+              <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-5.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Lesson 3 -->
-    <div class="audio-card">
-      <div class="lesson-header">
-        <div class="lesson-number">3</div>
-        <div class="lesson-title">Bitcoin - The First Crypto Currency</div>
-      </div>
-      <audio controls controlsList="nodownload">
-        <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-3.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+    <div class="text-center mt-16 text-gray-500 text-sm">
+      Pure education only • Always DYOR
     </div>
-
-    <!-- Lesson 4 -->
-    <div class="audio-card">
-      <div class="lesson-header">
-        <div class="lesson-number">4</div>
-        <div class="lesson-title">Ethereum (More than Money)</div>
-      </div>
-      <audio controls controlsList="nodownload">
-        <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-4.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
-    <!-- Lesson 5 -->
-    <div class="audio-card">
-      <div class="lesson-header">
-        <div class="lesson-number">5</div>
-        <div class="lesson-title">How Crypto transactions work?</div>
-      </div>
-      <audio controls controlsList="nodownload">
-        <source src="https://raw.githubusercontent.com/shauryaanjney-design/Crypto_Simplified/main/audio/Audio%20Lesson-5.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
   </div>
-
 </body>
 </html>
