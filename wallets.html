@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Wallets | Crypto Simplified</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-font { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+  <!-- Navbar -->
+  <nav class="border-b border-gray-800 bg-[#0a0a0a]/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl">◼</div>
+        <div>
+          <span class="heading-font text-2xl font-semibold tracking-tighter">Crypto Simplified</span>
+          <span class="ml-2 px-3 py-0.5 text-xs font-medium bg-emerald-500 text-black rounded-full">2026</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-[#00f5d4] transition-colors">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4] transition-colors">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4] transition-colors">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4] transition-colors">Bitcoin</a>
+        <a href="wallets.html" class="text-[#00f5d4] font-semibold">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4] transition-colors">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4] transition-colors">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4] transition-colors">FAQ</a>
+      </div>
+
+      <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-gray-300">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0a0a0a] border-t border-gray-800 px-8 py-6">
+      <div class="flex flex-col gap-6 text-lg">
+        <a href="index.html" class="hover:text-[#00f5d4]">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4]">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4]">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4]">Bitcoin</a>
+        <a href="wallets.html" class="text-[#00f5d4]">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4]">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4]">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4]">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lesson Header -->
+  <header class="bg-black py-12 border-b border-gray-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span class="text-gray-600">›</span>
+        <a href="what-is-crypto.html" class="hover:text-white">What is Crypto?</a>
+        <span class="text-gray-600">›</span>
+        <a href="blockchain.html" class="hover:text-white">Blockchain</a>
+        <span class="text-gray-600">›</span>
+        <a href="bitcoin.html" class="hover:text-white">Bitcoin</a>
+        <span class="text-gray-600">›</span>
+        <span class="text-white">Crypto Wallets</span>
+      </nav>
+
+      <div class="flex flex-col md:flex-row md:items-end gap-6">
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-3 bg-gray-900 px-5 py-2 rounded-2xl mb-4">
+            <span class="text-emerald-400 font-medium">Lesson 04</span>
+            <span class="h-1 w-1 bg-emerald-400 rounded-full"></span>
+            <span class="text-gray-400">11 min read</span>
+          </div>
+          <h1 class="heading-font text-5xl md:text-6xl font-semibold tracking-tighter leading-tight">
+            Crypto Wallets
+          </h1>
+          <p class="mt-4 text-xl text-gray-300">Not your keys, not your coins. Learn how to safely store your cryptocurrency.</p>
+        </div>
+        <div class="text-right text-sm text-gray-400">
+          Progress: <span class="text-emerald-400 font-medium">4 of 15</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-screen-2xl mx-auto px-8 py-12">
+    <div class="grid lg:grid-cols-12 gap-12">
+
+      <!-- Main Content -->
+      <div class="lg:col-span-8 space-y-16">
+
+        <!-- Golden Rule -->
+        <div class="bg-gradient-to-r from-red-900/30 to-transparent border border-red-800 rounded-3xl p-10">
+          <div class="flex items-start gap-5">
+            <i class="fas fa-key text-5xl text-red-400 mt-1"></i>
+            <div>
+              <h2 class="text-3xl font-semibold mb-4">"Not Your Keys, Not Your Coins"</h2>
+              <p class="text-lg text-gray-200">
+                This is the most important rule in crypto. If you don’t control the private keys, you don’t truly own your coins — the exchange does.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hot vs Cold -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">Hot Wallets vs Cold Wallets</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 border border-orange-700/50 rounded-3xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-orange-500/20 rounded-2xl flex items-center justify-center text-3xl">🔥</div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Hot Wallets</h3>
+                  <span class="text-orange-400 text-sm">Connected to internet</span>
+                </div>
+              </div>
+              <ul class="space-y-4 text-gray-300">
+                <li>Convenient for daily use</li>
+                <li>Good for small amounts</li>
+                <li>More vulnerable to hacks</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-900 border border-emerald-700 rounded-3xl p-8">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-emerald-500/20 rounded-2xl flex items-center justify-center text-3xl">❄️</div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Cold Wallets</h3>
+                  <span class="text-emerald-400 text-sm">Offline storage</span>
+                </div>
+              </div>
+              <ul class="space-y-4 text-gray-300">
+                <li>Much more secure</li>
+                <li>Best for long-term holdings</li>
+                <li>Recommended for larger amounts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Types of Wallets -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">Types of Wallets</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 rounded-3xl p-8">
+              <h4 class="font-semibold text-xl mb-4">📱 Mobile Wallets</h4>
+              <p class="text-gray-300">Easy to use apps (Trust Wallet, Exodus). Great for beginners and small daily transactions.</p>
+            </div>
+            <div class="bg-gray-900 rounded-3xl p-8">
+              <h4 class="font-semibold text-xl mb-4">💻 Desktop Wallets</h4>
+              <p class="text-gray-300">Installed on your computer. More control than mobile but still online.</p>
+            </div>
+            <div class="bg-gray-900 rounded-3xl p-8">
+              <h4 class="font-semibold text-xl mb-4">🔐 Hardware Wallets</h4>
+              <p class="text-gray-300">Physical devices (Ledger, Trezor) that keep keys offline. Most secure option.</p>
+            </div>
+            <div class="bg-gray-900 rounded-3xl p-8">
+              <h4 class="font-semibold text-xl mb-4">📄 Paper Wallets</h4>
+              <p class="text-gray-300">Private keys printed on paper. Fully offline but can be damaged or lost.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beginner Checklist -->
+        <div class="bg-gray-900 rounded-3xl p-10">
+          <h3 class="text-2xl font-semibold mb-8">Beginner Checklist</h3>
+          <div class="grid md:grid-cols-2 gap-y-6 gap-x-12 text-gray-300">
+            <div class="flex gap-4"><span class="text-emerald-400 font-bold">1.</span> Start with a small test amount</div>
+            <div class="flex gap-4"><span class="text-emerald-400 font-bold">2.</span> Never share your seed phrase</div>
+            <div class="flex gap-4"><span class="text-emerald-400 font-bold">3.</span> Backup seed phrase offline (paper/metal)</div>
+            <div class="flex gap-4"><span class="text-emerald-400 font-bold">4.</span> Use hardware wallet for amounts above ₹50,000</div>
+          </div>
+        </div>
+
+        <!-- Golden Rule Box -->
+        <div class="bg-emerald-900/30 border border-emerald-700 rounded-3xl p-10 text-center">
+          <h3 class="text-3xl font-semibold mb-6 text-emerald-400">The Golden Rule</h3>
+          <p class="text-2xl leading-tight text-gray-100">
+            If you do not control the private keys,<br>
+            <span class="font-semibold text-white">you do not own the cryptocurrency.</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-4">
+        <div class="sticky top-8 space-y-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8">
+            <h4 class="font-semibold mb-5 flex items-center gap-2">
+              <i class="fas fa-list-ul"></i> Quick Summary
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li>“Not your keys, not your coins”</li>
+              <li>Hot wallets = convenient but riskier</li>
+              <li>Cold/hardware = safest for big amounts</li>
+              <li>Always backup your seed phrase offline</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8">
+            <div class="text-emerald-400 text-sm font-medium mb-2">Next Lesson →</div>
+            <a href="security.html" class="font-semibold hover:text-[#00f5d4]">Security & Scams</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="mt-20 flex justify-between items-center border-t border-gray-800 pt-10">
+      <a href="bitcoin.html" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left"></i>
+        <div>
+          <div class="text-xs">Previous</div>
+          <div class="font-medium">Bitcoin in 2026</div>
+        </div>
+      </a>
+
+      <a href="security.html" 
+         class="bg-[#00f5d4] hover:bg-[#00e6c8] text-black font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 transition-all">
+        Next: Security & Scams
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-5">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl">◼</div>
+            <span class="heading-font text-2xl font-semibold">Crypto Simplified</span>
+          </a>
+          <p class="text-gray-400">Pure education. No hype. No promotions.</p>
+        </div>
+        <div class="md:col-span-4 text-sm text-gray-400">
+          Educational purposes only.<br>
+          Always DYOR — Do Your Own Research.
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-600 mt-12">
+        Made with care by Shaurya Anjney
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

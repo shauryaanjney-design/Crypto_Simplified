@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Does Blockchain Work? | Crypto Simplified</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-font { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+  <!-- Navbar -->
+  <nav class="border-b border-gray-800 bg-[#0a0a0a]/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl">◼</div>
+        <div>
+          <span class="heading-font text-2xl font-semibold tracking-tighter">Crypto Simplified</span>
+          <span class="ml-2 px-3 py-0.5 text-xs font-medium bg-emerald-500 text-black rounded-full">2026</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-[#00f5d4] transition-colors">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4] transition-colors">What is Crypto?</a>
+        <a href="blockchain.html" class="text-[#00f5d4] font-semibold">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4] transition-colors">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4] transition-colors">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4] transition-colors">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4] transition-colors">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4] transition-colors">FAQ</a>
+      </div>
+
+      <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-gray-300">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0a0a0a] border-t border-gray-800 px-8 py-6">
+      <div class="flex flex-col gap-6 text-lg">
+        <a href="index.html" class="hover:text-[#00f5d4]">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4]">What is Crypto?</a>
+        <a href="blockchain.html" class="text-[#00f5d4]">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4]">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4]">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4]">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4]">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4]">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lesson Header -->
+  <header class="bg-black py-12 border-b border-gray-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span class="text-gray-600">›</span>
+        <a href="what-is-crypto.html" class="hover:text-white">What is Crypto?</a>
+        <span class="text-gray-600">›</span>
+        <span class="text-white">How Does Blockchain Work?</span>
+      </nav>
+
+      <div class="flex flex-col md:flex-row md:items-end gap-6">
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-3 bg-gray-900 px-5 py-2 rounded-2xl mb-4">
+            <span class="text-emerald-400 font-medium">Lesson 02</span>
+            <span class="h-1 w-1 bg-emerald-400 rounded-full"></span>
+            <span class="text-gray-400">10 min read</span>
+          </div>
+          <h1 class="heading-font text-5xl md:text-6xl font-semibold tracking-tighter leading-tight">
+            How Does<br>Blockchain Work?
+          </h1>
+          <p class="mt-4 text-xl text-gray-300">A simple explanation using a shared Google Sheet that no one can secretly change.</p>
+        </div>
+        <div class="text-right text-sm text-gray-400">
+          Progress: <span class="text-emerald-400 font-medium">2 of 15</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-screen-2xl mx-auto px-8 py-12">
+    <div class="grid lg:grid-cols-12 gap-12">
+
+      <!-- Main Content -->
+      <div class="lg:col-span-8 space-y-16">
+
+        <!-- Google Sheet Analogy -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-6">The Best Analogy: A Shared Google Sheet</h2>
+          <div class="bg-gray-900 rounded-3xl p-10 text-lg leading-relaxed text-gray-300">
+            <p class="mb-6">
+              Imagine a Google Sheet that records every transaction. 
+              This sheet is shared with thousands of people around the world.
+            </p>
+            <ul class="space-y-4 list-disc pl-6">
+              <li>Anyone can see the entire sheet (transparent)</li>
+              <li>No one can delete or secretly edit old entries (permanent)</li>
+              <li>When someone adds a new row, everyone gets an updated copy</li>
+            </ul>
+            <p class="mt-8 text-emerald-400 font-medium">
+              This shared, permanent, transparent Google Sheet is basically what a blockchain is.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step-by-Step -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">How a Transaction Works (Step by Step)</h2>
+          <div class="space-y-12">
+            <div class="flex gap-8">
+              <div class="flex-shrink-0 w-14 h-14 bg-[#00f5d4]/10 text-[#00f5d4] rounded-2xl flex items-center justify-center text-3xl font-bold">1</div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-semibold mb-3">You want to send money</h3>
+                <p class="text-gray-300">You open your wallet and enter the amount and the recipient’s address.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-8">
+              <div class="flex-shrink-0 w-14 h-14 bg-[#00f5d4]/10 text-[#00f5d4] rounded-2xl flex items-center justify-center text-3xl font-bold">2</div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-semibold mb-3">The transaction is broadcasted</h3>
+                <p class="text-gray-300">Your wallet sends the request to the network with your digital signature.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-8">
+              <div class="flex-shrink-0 w-14 h-14 bg-[#00f5d4]/10 text-[#00f5d4] rounded-2xl flex items-center justify-center text-3xl font-bold">3</div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-semibold mb-3">Validators check it</h3>
+                <p class="text-gray-300">Thousands of computers verify you have the coins and haven’t double-spent them.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-8">
+              <div class="flex-shrink-0 w-14 h-14 bg-[#00f5d4]/10 text-[#00f5d4] rounded-2xl flex items-center justify-center text-3xl font-bold">4</div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-semibold mb-3">The block is added</h3>
+                <p class="text-gray-300">Verified transactions are grouped into a block and added permanently to the chain.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blocks Visual -->
+        <div class="bg-gray-900 rounded-3xl p-10">
+          <h3 class="text-2xl font-semibold mb-6">How Blocks Are Linked</h3>
+          <div class="flex flex-col md:flex-row items-center gap-6 text-center">
+            <div class="flex-1 bg-black border border-gray-700 rounded-2xl p-6">
+              <div class="text-xs text-gray-500">Block #124,892</div>
+              <div class="text-[#00f5d4] font-mono text-sm mt-2">000000a3f8...</div>
+            </div>
+            <div class="text-5xl text-gray-600">→</div>
+            <div class="flex-1 bg-black border border-gray-700 rounded-2xl p-6">
+              <div class="text-xs text-gray-500">Block #124,893</div>
+              <div class="text-[#00f5d4] font-mono text-sm mt-2">000000b7c2...</div>
+              <div class="text-[10px] text-emerald-400 mt-4">Contains previous block’s hash</div>
+            </div>
+          </div>
+          <p class="text-center text-gray-400 mt-8 text-sm">
+            Each block contains the hash of the previous one — creating an unbreakable chain.
+          </p>
+        </div>
+
+        <!-- Key Takeaway -->
+        <div class="bg-gradient-to-r from-emerald-900/30 to-transparent border border-emerald-900/50 rounded-3xl p-10">
+          <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3">
+            <i class="fas fa-lightbulb text-emerald-400"></i> Key Takeaway
+          </h3>
+          <p class="text-lg text-gray-200">
+            Blockchain is a transparent, permanent, and decentralized digital ledger. 
+            It removes the need to trust any middleman because the rules are enforced by mathematics and thousands of independent computers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-4">
+        <div class="sticky top-8 space-y-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8">
+            <h4 class="font-semibold mb-5 flex items-center gap-2">
+              <i class="fas fa-list-ul"></i> Quick Summary
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li>Blockchain = shared, unchangeable ledger</li>
+              <li>Every transaction is verified by the network</li>
+              <li>Blocks are linked using cryptography</li>
+              <li>No single person or company controls it</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8">
+            <div class="text-emerald-400 text-sm font-medium mb-2">Next Lesson →</div>
+            <a href="bitcoin.html" class="font-semibold hover:text-[#00f5d4]">Bitcoin in 2026</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="mt-20 flex justify-between items-center border-t border-gray-800 pt-10">
+      <a href="what-is-crypto.html" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left"></i>
+        <div>
+          <div class="text-xs">Previous</div>
+          <div class="font-medium">What is Cryptocurrency?</div>
+        </div>
+      </a>
+
+      <a href="bitcoin.html" 
+         class="bg-[#00f5d4] hover:bg-[#00e6c8] text-black font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 transition-all">
+        Next: Bitcoin in 2026
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-5">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl">◼</div>
+            <span class="heading-font text-2xl font-semibold">Crypto Simplified</span>
+          </a>
+          <p class="text-gray-400">Pure education. No hype. No promotions.</p>
+        </div>
+        <div class="md:col-span-4 text-sm text-gray-400">
+          This website is for educational purposes only.<br>
+          Always DYOR — Do Your Own Research.
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-600 mt-12">
+        Made with care by Shaurya Anjney
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

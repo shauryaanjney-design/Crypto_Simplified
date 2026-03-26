@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Simplified | Pure Education. No Hype.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    .heading-font {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+  <!-- Navbar -->
+  <nav class="border-b border-gray-800 bg-[#0a0a0a]/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl leading-none">◼</div>
+        <div>
+          <span class="heading-font text-2xl font-semibold tracking-tighter">Crypto Simplified</span>
+          <span class="ml-2 px-3 py-0.5 text-xs font-medium bg-emerald-500 text-black rounded-full">2026</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="text-[#00f5d4] font-semibold">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4] transition-colors">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4] transition-colors">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4] transition-colors">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4] transition-colors">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4] transition-colors">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4] transition-colors">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4] transition-colors">FAQ</a>
+      </div>
+
+      <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-gray-300">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0a0a0a] border-t border-gray-800 px-8 py-6">
+      <div class="flex flex-col gap-6 text-lg">
+        <a href="index.html" class="text-[#00f5d4]">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4]">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4]">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4]">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4]">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4]">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4]">Taxes in India</a>
+        <a href="faq.html" class="hover:text-[#00f5d4]">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg py-24 md:py-32">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="max-w-4xl">
+        <div class="inline-flex items-center gap-2 bg-gray-900 border border-gray-700 rounded-full px-6 py-2 text-sm mb-6">
+          <span class="text-[#00f5d4]">✦</span>
+          Pure Education • No Promotions • No Hype
+        </div>
+        
+        <h1 class="heading-font text-6xl md:text-7xl font-semibold leading-none tracking-tighter mb-6">
+          Crypto.<br>Simplified.
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-10">
+          No jargon. No get-rich-quick promises. Just clear, honest explanations 
+          to help you truly understand cryptocurrency — made for beginners in India and around the world.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="what-is-crypto.html" 
+             class="bg-[#00f5d4] hover:bg-[#00e6c8] text-black font-semibold px-8 py-4 rounded-2xl text-lg transition-all inline-flex items-center gap-3">
+            Start Lesson 1 Free
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#lessons" 
+             class="border border-gray-600 hover:border-gray-400 font-medium px-8 py-4 rounded-2xl text-lg transition-all">
+            Browse All Lessons
+          </a>
+        </div>
+
+        <div class="mt-12 flex items-center gap-8 text-sm text-gray-400">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check text-emerald-400"></i>
+            Made for Indians
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check text-emerald-400"></i>
+            Beginner Friendly
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check text-emerald-400"></i>
+            Always Updated 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Site Exists -->
+  <section class="py-20">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="text-center mb-16">
+        <h2 class="heading-font text-4xl font-semibold mb-4">Why Crypto Simplified Exists</h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+          The crypto world is full of noise. We cut through it with calm, honest education.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-[#00f5d4]/40 transition-all group">
+          <div class="w-12 h-12 bg-[#00f5d4]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-book text-2xl text-[#00f5d4]"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Clear Explanations</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Complex topics explained like you're a smart friend — using simple analogies and real examples.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-[#00f5d4]/40 transition-all group">
+          <div class="w-12 h-12 bg-[#00f5d4]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-flag text-2xl text-[#00f5d4]"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">India-Friendly</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Special focus on Indian regulations, taxes, UPI payments, and practical advice.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-[#00f5d4]/40 transition-all group">
+          <div class="w-12 h-12 bg-[#00f5d4]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-shield-alt text-2xl text-[#00f5d4]"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Safety First</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Security, self-custody, and avoiding scams are at the center — because protecting your money matters most.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lessons Grid -->
+  <section id="lessons" class="py-20 bg-[#111111]">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <span class="text-emerald-400 text-sm font-medium tracking-widest">15 LESSON COURSE</span>
+          <h2 class="heading-font text-4xl font-semibold">Complete Beginner Journey</h2>
+        </div>
+        <a href="faq.html" class="text-[#00f5d4] hover:underline flex items-center gap-2 text-sm">
+          View All <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="what-is-crypto.html" class="group bg-gray-900 border border-gray-800 hover:border-[#00f5d4] rounded-3xl overflow-hidden transition-all">
+          <div class="h-2 bg-[#00f5d4]"></div>
+          <div class="p-8">
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-emerald-400">Lesson 01</span>
+              <span class="text-gray-500">8 min read</span>
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 group-hover:text-[#00f5d4] transition-colors">What is Cryptocurrency?</h3>
+            <p class="text-gray-400 line-clamp-3">Understand the basics with simple analogies. Why crypto exists and how it differs from traditional money.</p>
+          </div>
+        </a>
+
+        <a href="blockchain.html" class="group bg-gray-900 border border-gray-800 hover:border-[#00f5d4] rounded-3xl overflow-hidden transition-all">
+          <div class="h-2 bg-[#10b981]"></div>
+          <div class="p-8">
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-emerald-400">Lesson 02</span>
+              <span class="text-gray-500">10 min read</span>
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 group-hover:text-[#00f5d4] transition-colors">How Does Blockchain Work?</h3>
+            <p class="text-gray-400 line-clamp-3">A simple explanation using everyday analogies like a shared Google Sheet.</p>
+          </div>
+        </a>
+
+        <a href="bitcoin.html" class="group bg-gray-900 border border-gray-800 hover:border-[#00f5d4] rounded-3xl overflow-hidden transition-all">
+          <div class="h-2 bg-[#f59e0b]"></div>
+          <div class="p-8">
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-emerald-400">Lesson 03</span>
+              <span class="text-gray-500">14 min read</span>
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 group-hover:text-[#00f5d4] transition-colors">Bitcoin in 2026</h3>
+            <p class="text-gray-400 line-clamp-3">The story of Bitcoin, why it still matters, and what every beginner should know.</p>
+          </div>
+        </a>
+
+        <!-- Add more lesson cards as needed. For now showing first 3 prominently -->
+      </div>
+
+      <div class="text-center mt-16">
+        <a href="what-is-crypto.html" 
+           class="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 px-10 py-4 rounded-2xl text-lg font-medium transition-all">
+          Start Your Learning Journey
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 border-t border-gray-800">
+    <div class="max-w-screen-2xl mx-auto px-8 text-center">
+      <p class="text-gray-400 mb-3">Created with care by</p>
+      <p class="text-2xl font-medium">Shaurya Anjney</p>
+      <div class="mt-8 text-sm text-gray-500 max-w-md mx-auto">
+        This is a completely free educational project.<br>
+        No affiliations. No promotions. Just honest knowledge.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-5">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-9 h-9 bg-[#00f5d4] rounded-2xl flex items-center justify-center text-black font-bold text-3xl">◼</div>
+            <span class="heading-font text-2xl font-semibold">Crypto Simplified</span>
+          </a>
+          <p class="text-gray-400 text-lg leading-relaxed max-w-md">
+            Pure education. No hype. No promotions.<br>
+            Made to help you understand cryptocurrency properly.
+          </p>
+          <div class="mt-8 text-sm text-gray-500">
+            © 2026 Crypto Simplified • All Rights Reserved<br>
+            <span class="text-amber-400">Always DYOR — Do Your Own Research</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="font-medium mb-6 text-gray-300">Quick Links</h4>
+          <div class="flex flex-col gap-3 text-gray-400">
+            <a href="what-is-crypto.html" class="hover:text-white">What is Cryptocurrency?</a>
+            <a href="blockchain.html" class="hover:text-white">How Blockchain Works</a>
+            <a href="bitcoin.html" class="hover:text-white">Bitcoin in 2026</a>
+            <a href="wallets.html" class="hover:text-white">Crypto Wallets</a>
+            <a href="security.html" class="hover:text-white">Security & Scams</a>
+            <a href="taxes.html" class="hover:text-white">Taxes in India</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="font-medium mb-6 text-gray-300">Important Note</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            This website is created purely for educational purposes. 
+            Nothing here is financial advice. Cryptocurrency involves risk. 
+            Always do your own research and never invest more than you can afford to lose.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-gray-600 mt-16 pt-8 border-t border-gray-900">
+        Made with care by Shaurya Anjney
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

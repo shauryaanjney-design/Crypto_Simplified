@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Glossary | Crypto Simplified</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    .heading-font {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+  <!-- Navbar -->
+  <nav class="border-b border-gray-800 bg-[#0a0a0a] sticky top-0 z-50">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-[#00f5d4] rounded-xl flex items-center justify-center text-black font-bold text-2xl">◼</div>
+        <div>
+          <span class="heading-font text-2xl font-semibold tracking-tight">Crypto Simplified</span>
+          <span class="ml-2 px-3 py-1 text-xs font-medium bg-emerald-500 text-black rounded-full">2026</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-[#00f5d4] transition-colors">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4] transition-colors">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4] transition-colors">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4] transition-colors">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4] transition-colors">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4] transition-colors">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4] transition-colors">Taxes in India</a>
+        <a href="buy-crypto.html" class="hover:text-[#00f5d4] transition-colors">Buy Crypto</a>
+        <a href="ethereum.html" class="hover:text-[#00f5d4] transition-colors">Ethereum</a>
+        <a href="altcoins.html" class="hover:text-[#00f5d4] transition-colors">Altcoins</a>
+        <a href="defi.html" class="hover:text-[#00f5d4] transition-colors">DeFi</a>
+        <a href="nfts.html" class="hover:text-[#00f5d4] transition-colors">NFTs</a>
+        <a href="trading.html" class="hover:text-[#00f5d4] transition-colors">Trading & Investing</a>
+        <a href="myths.html" class="hover:text-[#00f5d4] transition-colors">Myths & FAQs</a>
+        <a href="faq.html" class="text-[#00f5d4] font-semibold">FAQ</a>
+      </div>
+
+      <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0a0a0a] border-t border-gray-800 px-8 py-6">
+      <div class="flex flex-col gap-6 text-lg">
+        <a href="index.html" class="hover:text-[#00f5d4]">Home</a>
+        <a href="what-is-crypto.html" class="hover:text-[#00f5d4]">What is Crypto?</a>
+        <a href="blockchain.html" class="hover:text-[#00f5d4]">Blockchain</a>
+        <a href="bitcoin.html" class="hover:text-[#00f5d4]">Bitcoin</a>
+        <a href="wallets.html" class="hover:text-[#00f5d4]">Wallets</a>
+        <a href="security.html" class="hover:text-[#00f5d4]">Security</a>
+        <a href="taxes.html" class="hover:text-[#00f5d4]">Taxes in India</a>
+        <a href="buy-crypto.html" class="hover:text-[#00f5d4]">Buy Crypto</a>
+        <a href="ethereum.html" class="hover:text-[#00f5d4]">Ethereum</a>
+        <a href="altcoins.html" class="hover:text-[#00f5d4]">Altcoins</a>
+        <a href="defi.html" class="hover:text-[#00f5d4]">DeFi</a>
+        <a href="nfts.html" class="hover:text-[#00f5d4]">NFTs</a>
+        <a href="trading.html" class="hover:text-[#00f5d4]">Trading & Investing</a>
+        <a href="myths.html" class="hover:text-[#00f5d4]">Myths & FAQs</a>
+        <a href="faq.html" class="text-[#00f5d4]">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lesson Header -->
+  <header class="bg-black py-12 border-b border-gray-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span class="text-gray-600">›</span>
+        <a href="what-is-crypto.html" class="hover:text-white">What is Crypto?</a>
+        <span class="text-gray-600">›</span>
+        <a href="blockchain.html" class="hover:text-white">Blockchain</a>
+        <span class="text-gray-600">›</span>
+        <a href="bitcoin.html" class="hover:text-white">Bitcoin</a>
+        <span class="text-gray-600">›</span>
+        <a href="wallets.html" class="hover:text-white">Wallets</a>
+        <span class="text-gray-600">›</span>
+        <a href="security.html" class="hover:text-white">Security</a>
+        <span class="text-gray-600">›</span>
+        <a href="taxes.html" class="hover:text-white">Taxes in India</a>
+        <span class="text-gray-600">›</span>
+        <a href="buy-crypto.html" class="hover:text-white">Buy Crypto</a>
+        <span class="text-gray-600">›</span>
+        <a href="ethereum.html" class="hover:text-white">Ethereum</a>
+        <span class="text-gray-600">›</span>
+        <a href="altcoins.html" class="hover:text-white">Altcoins</a>
+        <span class="text-gray-600">›</span>
+        <a href="defi.html" class="hover:text-white">DeFi</a>
+        <span class="text-gray-600">›</span>
+        <a href="nfts.html" class="hover:text-white">NFTs</a>
+        <span class="text-gray-600">›</span>
+        <a href="trading.html" class="hover:text-white">Trading & Investing</a>
+        <span class="text-gray-600">›</span>
+        <a href="myths.html" class="hover:text-white">Myths & FAQs</a>
+        <span class="text-gray-600">›</span>
+        <span class="text-white">FAQ & Glossary</span>
+      </nav>
+
+      <div class="flex flex-col md:flex-row md:items-end gap-6">
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-3 bg-gray-900 px-5 py-2 rounded-2xl mb-4">
+            <span class="text-emerald-400 font-medium">Lesson 14</span>
+            <span class="h-1 w-1 bg-emerald-400 rounded-full"></span>
+            <span class="text-gray-400">Final Lesson • 9 min read</span>
+          </div>
+          <h1 class="heading-font text-5xl md:text-6xl font-semibold tracking-tighter leading-tight">
+            FAQ & Glossary + Resources
+          </h1>
+          <p class="mt-4 text-xl text-gray-300 max-w-2xl">
+            Comprehensive answers, key terms explained, useful free tools, and your completion message.
+          </p>
+        </div>
+        <div class="text-right text-sm text-gray-400">
+          <div class="bg-gray-900 px-6 py-3 rounded-2xl inline-block">
+            Progress: <span class="text-emerald-400 font-medium">14/15</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-screen-2xl mx-auto px-8 py-12">
+    <div class="grid lg:grid-cols-12 gap-12">
+
+      <!-- Main Content -->
+      <div class="lg:col-span-8 space-y-16">
+
+        <!-- Comprehensive FAQ -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
+          
+          <div class="space-y-10">
+            <div>
+              <h4 class="font-semibold text-xl mb-3">Q: How much should a beginner invest in crypto?</h4>
+              <p class="text-gray-300">A: Only invest money you can afford to lose completely. Many start with ₹1,000–5,000 per month using DCA. Focus on learning before increasing amounts.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl mb-3">Q: Which wallet is best for beginners?</h4>
+              <p class="text-gray-300">A: Start with a reputable mobile wallet for small amounts. For larger holdings, move to a hardware wallet (Ledger or Trezor). Remember: Not your keys, not your coins.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl mb-3">Q: Is crypto safe?</h4>
+              <p class="text-gray-300">A: The technology is secure, but your security depends on your habits. Scams and hacks are common. Follow the security rules from Lesson 5 strictly.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl mb-3">Q: Can the government ban crypto in India?</h4>
+              <p class="text-gray-300">A: The government has not banned it and has introduced regulations and taxation instead. Always stay updated with official announcements.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl mb-3">Q: Should I tell my family about my crypto investments?</h4>
+              <p class="text-gray-300">A: Only if they are financially literate and supportive. Many prefer to keep it private until they have a clear long-term plan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glossary -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">Crypto Glossary (A–Z)</h2>
+          
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 text-sm">
+            <div>
+              <p class="font-semibold text-emerald-400">Blockchain</p>
+              <p class="text-gray-400">A decentralized, transparent, and immutable digital ledger.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">Wallet</p>
+              <p class="text-gray-400">Software or hardware that stores your private keys and lets you manage crypto.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">Private Key / Seed Phrase</p>
+              <p class="text-gray-400">The secret code that proves ownership. Never share it.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">DYOR</p>
+              <p class="text-gray-400">Do Your Own Research — always verify information yourself.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">FOMO</p>
+              <p class="text-gray-400">Fear Of Missing Out — emotional buying at peak prices.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">HODL</p>
+              <p class="text-gray-400">Holding crypto long-term instead of selling during volatility.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">VDA</p>
+              <p class="text-gray-400">Virtual Digital Asset — official Indian government term for crypto.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-emerald-400">Smart Contract</p>
+              <p class="text-gray-400">Self-executing code that runs automatically on blockchain.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended Free Resources -->
+        <div class="bg-gray-900 rounded-3xl p-10">
+          <h3 class="text-2xl font-semibold mb-8">Recommended Free Resources</h3>
+          <div class="grid md:grid-cols-2 gap-8 text-gray-300">
+            <div>
+              <p class="font-medium mb-4">Learning</p>
+              <ul class="space-y-3">
+                <li>• Bitcoin Whitepaper (simple explanations available)</li>
+                <li>• Ethereum.org documentation</li>
+                <li>• Khan Academy + YouTube channels focused on education (not hype)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-medium mb-4">Tools</p>
+              <ul class="space-y-3">
+                <li>• Block explorers (Blockchain.com, Etherscan)</li>
+                <li>• CoinMarketCap or Coingecko for prices</li>
+                <li>• Tax calculation tools (use with CA guidance)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completion Message -->
+        <div class="bg-gradient-to-br from-emerald-900/40 to-transparent border border-emerald-700 rounded-3xl p-12 text-center">
+          <div class="max-w-2xl mx-auto">
+            <div class="text-6xl mb-6">🎉</div>
+            <h2 class="heading-font text-5xl font-semibold mb-6">Congratulations!</h2>
+            <p class="text-2xl text-emerald-300 mb-8">
+              You’ve completed the full 15-lesson journey of <span class="font-semibold text-white">Crypto Simplified</span>.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              You now have a solid foundational understanding of cryptocurrency — without the hype.<br><br>
+              Remember: Keep learning, stay safe, manage risk, and always do your own research.
+            </p>
+            <div class="mt-10 inline-flex items-center gap-4 bg-black px-8 py-4 rounded-2xl border border-emerald-700">
+              <span class="text-emerald-400">→</span>
+              <span class="text-emerald-300 font-medium">Continue exploring responsibly</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-4">
+        <div class="sticky top-8 space-y-8">
+
+          <!-- Quick Summary -->
+          <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8">
+            <h4 class="font-semibold text-lg mb-5 flex items-center gap-2">
+              <i class="fas fa-list-ul"></i> Course Complete
+            </h4>
+            <p class="text-emerald-400 text-sm">You’ve finished all 15 lessons.</p>
+            <div class="h-2 bg-gray-800 rounded-full mt-6 overflow-hidden">
+              <div class="h-2 w-full bg-[#00f5d4] rounded-full"></div>
+            </div>
+            <p class="text-center text-xs text-gray-500 mt-2">14 of 15 • Final Lesson</p>
+          </div>
+
+          <!-- Final Encouragement -->
+          <div class="bg-emerald-900/30 border border-emerald-700 rounded-3xl p-8 text-center">
+            <p class="text-emerald-300 font-medium">
+              The journey doesn’t end here.<br>
+              Stay curious. Stay cautious.<br>
+              Keep learning.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="mt-20 flex justify-between items-center border-t border-gray-800 pt-10">
+      <a href="myths.html" 
+         class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left"></i>
+        <div>
+          <div class="text-xs">Previous</div>
+          <div class="font-medium">Common Myths & FAQs</div>
+        </div>
+      </a>
+
+      <a href="index.html" 
+         class="flex items-center gap-3 bg-[#00f5d4] hover:bg-[#00e6c8] text-black font-semibold px-10 py-4 rounded-2xl transition-all">
+        Back to Home
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-900 py-16">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-9 h-9 bg-[#00f5d4] rounded-xl flex items-center justify-center text-black font-bold text-2xl">◼</div>
+            <span class="heading-font text-2xl font-semibold">Crypto Simplified</span>
+          </div>
+          <p class="text-gray-400 text-lg leading-relaxed max-w-md">
+            Pure education. No hype. No promotions.<br>
+            Made to help you understand cryptocurrency properly.
+          </p>
+          <div class="mt-8 text-sm text-gray-500">
+            © 2026 Crypto Simplified • All Rights Reserved<br>
+            <span class="text-amber-400">Always DYOR — Do Your Own Research</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="font-medium mb-6 text-gray-300">Quick Links</h4>
+          <div class="flex flex-col gap-3 text-gray-400">
+            <a href="index.html" class="hover:text-white">Home</a>
+            <a href="what-is-crypto.html" class="hover:text-white">What is Cryptocurrency?</a>
+            <a href="bitcoin.html" class="hover:text-white">Bitcoin in 2026</a>
+            <a href="wallets.html" class="hover:text-white">Crypto Wallets</a>
+            <a href="security.html" class="hover:text-white">Security & Scams</a>
+            <a href="taxes.html" class="hover:text-white">Taxes in India</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="font-medium mb-6 text-gray-300">Important Note</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            This website is created purely for educational purposes. 
+            Nothing here is financial advice. Cryptocurrency involves risk. 
+            Always do your own research and never invest more than you can afford to lose.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-gray-600 mt-16 pt-8 border-t border-gray-900">
+        Made with care by Shaurya Anjney
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
